@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_registration_participants",
+  "info": {
+    "displayName": "Participant",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "prename": {
+      "type": "string",
+      "required": true
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

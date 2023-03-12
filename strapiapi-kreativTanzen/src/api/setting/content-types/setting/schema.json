@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "settings",
+  "info": {
+    "singularName": "setting",
+    "pluralName": "settings",
+    "displayName": "Setting",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "instaHashtag_Project": {
+      "type": "string"
+    },
+    "instaHashtag_Workshop": {
+      "type": "string"
+    },
+    "instaHashtag_Course": {
+      "type": "string"
+    },
+    "instaAccessToken": {
+      "type": "string",
+      "required": false
+    },
+    "mobileNumber": {
+      "type": "integer",
+      "required": false
+    }
+  }
+}

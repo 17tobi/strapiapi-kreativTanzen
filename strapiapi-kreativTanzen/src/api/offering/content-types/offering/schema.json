@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "offerings",
+  "info": {
+    "singularName": "offering",
+    "pluralName": "offerings",
+    "displayName": "Offering",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "course": {
+      "type": "richtext"
+    },
+    "workshop": {
+      "type": "richtext"
+    },
+    "project": {
+      "type": "richtext"
+    },
+    "caption": {
+      "type": "text"
+    }
+  }
+}

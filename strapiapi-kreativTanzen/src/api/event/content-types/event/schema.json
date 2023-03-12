@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "start_datetime": {
+      "type": "datetime"
+    },
+    "end_datetime": {
+      "type": "datetime"
+    },
+    "eventType": {
+      "type": "enumeration",
+      "enum": [
+        "Course-10",
+        "Workshop-20",
+        "Project-30"
+      ],
+      "required": true
+    },
+    "targetGroup": {
+      "type": "enumeration",
+      "enum": [
+        "Adults-10",
+        "Children-20",
+        "Both-30"
+      ],
+      "required": true
+    },
+    "course": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course.course",
+      "inversedBy": "events"
+    },
+    "location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "event.location"
+    }
+  }
+}
